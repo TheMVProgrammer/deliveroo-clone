@@ -15,6 +15,7 @@ import {
     MagnifyingGlassIcon,
     AdjustmentsVerticalIcon
 } from "react-native-heroicons/outline";
+import Categories from '../components/Categories';
 
 export default function Home() {
     const navigation = useNavigation();
@@ -73,8 +74,18 @@ export default function Home() {
 
         {/* Body */}
 
-        <ScrollView>
-            {/* Me quedé en esta parte */}
+        <ScrollView
+            className="bg-gray-100"
+            contentContainerStyle={{
+                paddingBottom: 100,
+            }}
+        >
+            {/* Categories */}
+            <Categories/>
+
+            {/* Features */}
+
+            
         </ScrollView>
 
       </SafeAreaView>
